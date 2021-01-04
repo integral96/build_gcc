@@ -23,5 +23,6 @@ cd gcc-build
     --enable-__cxa_atexit                            \
     --enable-clocale=gnu                             \
     --enable-languages=all                           \
+    --disable-multilib                               \
 && make -j$(nproc) \
 && make install
